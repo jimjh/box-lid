@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Box Lid Navigation</title>
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/box-lid.css'>
+    <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script src='js/box-lid.js'></script>
+  </head>
+  <body class='box-lid'>
+    <div class='box-lid-menu'>
+      <div class='box-lid-icon'></div>
+      <nav>
+        <h4>Projects</h4>
+        <a href='#'>Star Trek Enterprise</a>
+        <a href='#'>Iron Man 3</a>
+        <a href='#'>Audi E Tron</a>
+      </nav>
+    </div>
+    <div class='box-lid-content'>
+      <img src='images/audi.jpg'>
+    </div>
+    <script>
+      $('.box-lid-menu').boxLid();
+    </script>
+  </body>
+</html>
