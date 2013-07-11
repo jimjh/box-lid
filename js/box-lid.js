@@ -4,26 +4,41 @@
  *
  * Copyright 2013 Jiunn Haur Lim
  * Released under the MIT License
+ *
+ * Usage:
+ *    $('.box-lid-menu').boxLid();
  */
 ;(function($) {
   'use strict';
 
-  var OPEN_TRIGGER   = '.box-lid-menu';
-  var OPEN_PARENT    = '.box-lid';
+  // TODO tests
 
-  var OPEN_INDICATOR = 'box-lid-open';
+  function BoxLid(opts) {
 
-  function open() {
-    $(OPEN_PARENT).addClass(OPEN_INDICATOR);
+    opts = $.extend({
+      container: '.box-lid',
+      flag:      'box-lid-open'
+    }, opts);
+
+    var container = $(opts.container);
+
+    this.open  = function() {
+      container.data('box-lid-timer', setTimeout(function() {
+        container.addClass(opts.flag);
+      }, 100));
+    };
+
+    this.close = function() {
+      clearTimeout(container.data('box-lid-timer'));
+      container.removeClass(opts.flag);
+    };
+
   }
 
-  function close() {
-    $(OPEN_PARENT).removeClass(OPEN_INDICATOR);
-  }
-
-  $.fn.boxLid = function () {
+  $.fn.boxLid = function (options) {
+    var box = new BoxLid(options);
     return this.each(function() {
-      $(this).hover(open, close);
+      $(this).hover(box.open, box.close);
     });
   };
 
