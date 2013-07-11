@@ -26,7 +26,7 @@ Next, create the following HTML structure:
 ```
 
 Finally, invoke `$('.box-lid-menu').boxLid()` where appropriate. The most
-common usage should be simply
+common usage should be
 
 ```js
 $(function() {
