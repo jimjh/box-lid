@@ -1,5 +1,3 @@
-// TODO make mixins
-// TODO compress
 /*!
  * jQuery Box Lid Plugin v0.1
  * https://github.com/jimjh/jquery-box-lid
@@ -7,6 +5,7 @@
  * Copyright 2013 Jiunn Haur Lim
  * Released under the MIT License
  */
+// TODO make mixins
 @import "compass/css3";
 
 $box-lid-background: #000  !default; // background that appears when lid is open
@@ -32,12 +31,12 @@ $box-lid-bar-background: rgba(0, 0, 0, 0.08) !default;
 
   .box-lid-icon {
     @include transition(all 250ms $box-lid-transition);
-    position: absolute;
+    position: absolute;  // center the navicon
     top: 50%;
     left: 25%;
   }
 
-  .box-lid-icon:before {
+  .box-lid-icon:before { // create the navicon using shadows
     content: '';
     position: absolute;
     width: 1.1em;
@@ -50,13 +49,13 @@ $box-lid-bar-background: rgba(0, 0, 0, 0.08) !default;
 
   .box-lid-menu {
     width: $box-lid-bar-width;
-    position: fixed;
-    height: 100%;
     background: $box-lid-bar-background;
+    position: fixed; // create bar that fills up the page
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 2;
-    nav {
+    nav { // push nav to the left, beyond the viewport
       @include transition(all 500ms $box-lid-transition);
       display: block;
       height: 100%;
@@ -70,7 +69,7 @@ $box-lid-bar-background: rgba(0, 0, 0, 0.08) !default;
   }
 
   &.box-lid-open {
-    .box-lid-content {
+    .box-lid-content { // skew the content
       @include transform(rotateY(-30deg) translateZ(0px) translateX(200px));
     }
     .box-lid-icon { @include opacity(0); }

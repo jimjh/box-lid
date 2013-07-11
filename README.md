@@ -34,7 +34,6 @@ $(function() {
 });
 ```
 
-- TODO compress
 - TODO release plugin
 
 ## Configuration

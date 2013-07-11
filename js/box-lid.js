@@ -22,12 +22,14 @@
 
     var container = $(opts.container);
 
+    // opens the lid with a tiny delay to prevent blinking
     this.open  = function() {
       container.data('box-lid-timer', setTimeout(function() {
         container.addClass(opts.flag);
       }, 100));
     };
 
+    // closes the lid
     this.close = function() {
       clearTimeout(container.data('box-lid-timer'));
       container.removeClass(opts.flag);
