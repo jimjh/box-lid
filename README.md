@@ -25,7 +25,7 @@ Next, create the following HTML structure:
   </div>
 ```
 
-Finally, invoke `$('.box-lid-menu').boxLid()` whenever appropriate. The most
+Finally, invoke `$('.box-lid-menu').boxLid()` where appropriate. The most
 common usage should be simply
 
 ```js
@@ -35,7 +35,6 @@ $(function() {
 ```
 
 - TODO compress
-- TODO license
 - TODO release plugin
 
 ## Configuration
@@ -44,14 +43,14 @@ There are three ways to configure the menu.
 
 ### SCSS
 If you use SCSS, simply override the configuration variables before importing
-`sass/box-lid.scss`. For example,
+[sass/box-lid.scss][sass]. For example,
 
 ```scss
 $box-lid-background: #ccc;
 @import 'box-lid';
 ```
 
-Refer to the beginning of `sass/box-lid.scss` for the complete list of
+Refer to the beginning of [sass/box-lid.scss][sass] for the complete list of
 configuration variables.
 
 ### CSS
@@ -59,3 +58,4 @@ If the above method is not your cup of tea, you can also choose to override the 
 Unfortunately this method is terribly brittle.
 
   [demo]: http://jimjh.github.io/box-lid/
+  [sass]: https://github.com/jimjh/box-lid/blob/master/sass/box-lid.scss
