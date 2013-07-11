@@ -1,5 +1,5 @@
 This jQuery plugin creates the box lid effect inspired by
-[TOYBOX](http://www.toybox.co.nz/). Here is [a demo][demo].
+[Toybox](http://www.toybox.co.nz/). Here is [a demo][demo].
 
 ## Installation
 
@@ -58,4 +58,4 @@ configuration variables.
 If the above method is not your cup of tea, you can also choose to override the CSS.
 Unfortunately this method is terribly brittle.
 
-  [demo]: https://jimjh.github.io/box-lid/
+  [demo]: http://jimjh.github.io/box-lid/
