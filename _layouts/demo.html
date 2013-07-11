@@ -7,8 +7,8 @@
     <script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
     <![endif]-->
     <link rel='stylesheet' type='text/css' href='css/reset.css'>
-    <link rel='stylesheet' type='text/css' href='css/styles.css'>
-    <link rel='stylesheet' type='text/css' href='css/box-lid.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/docs.css'>
+    <link rel='stylesheet' type='text/css' href='css/box-lid.css'>
     <link rel='stylesheet' type='text/css' href='css/pygment_trac.css'>
   </head>
   <body>
@@ -50,6 +50,7 @@
     <script> $('.box-lid-menu').boxLid(); </script>
 
     <script>
+      /* Quick Hack to generate menu. */
       $('section').children().each(function() {
         $(this).hide();
       });

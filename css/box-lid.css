@@ -16,15 +16,13 @@
   -ms-perspective-origin: 50% 50%;
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
-  background: black;
-}
+  background: black; }
 .box-lid .box-lid-content {
   -webkit-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   -moz-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   -o-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
-  background: white;
-}
+  background: white; }
 
 .box-lid-icon {
   -webkit-transition: all 250ms cubic-bezier(0.75, 0, 0.175, 1);
@@ -33,8 +31,7 @@
   transition: all 250ms cubic-bezier(0.75, 0, 0.175, 1);
   position: absolute;
   top: 50%;
-  left: 25%;
-}
+  left: 25%; }
 
 .box-lid-icon:before {
   content: '';
@@ -42,8 +39,7 @@
   width: 1.1em;
   height: 0.15em;
   background: black;
-  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
-}
+  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black; }
 
 .box-lid-menu {
   width: 40px;
@@ -52,8 +48,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
-}
+  z-index: 2; }
 .box-lid-menu nav {
   -webkit-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   -moz-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
@@ -65,23 +60,18 @@
   position: absolute;
   top: 0;
   left: -240px;
-  color: white;
-}
+  color: white; }
 .box-lid-menu nav a {
-  display: block;
-}
+  display: block; }
 
 .box-lid-open .box-lid-content {
   -webkit-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
   -moz-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
   -ms-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
   -o-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
-  transform: rotateY(-30deg) translateZ(0px) translateX(200px);
-}
+  transform: rotateY(-30deg) translateZ(0px) translateX(200px); }
 .box-lid-open .box-lid-icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}
+  opacity: 0; }
 .box-lid-open .box-lid-menu nav {
-  left: 0;
-}
+  left: 0; }
