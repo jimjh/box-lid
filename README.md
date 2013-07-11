@@ -1,8 +1,7 @@
 This jQuery plugin creates the box lid effect inspired by
-[Toybox](http://www.toybox.co.nz/). Here is [a demo][demo].
+[Toybox](http://www.toybox.co.nz/). Here is [a simple demo][demo].
 
 ## Installation
-
 First, include the stylesheet and javascript as follows:
 
 ```html
@@ -37,7 +36,6 @@ $(function() {
 - TODO release plugin
 
 ## Configuration
-
 There are three ways to configure the menu.
 
 ### SCSS
@@ -56,5 +54,5 @@ configuration variables.
 If the above method is not your cup of tea, you can also choose to override the CSS.
 Unfortunately this method is terribly brittle.
 
-  [demo]: http://jimjh.github.io/box-lid/
+  [demo]: http://jimjh.github.io/box-lid/demo.html
   [sass]: https://github.com/jimjh/box-lid/blob/master/sass/box-lid.scss
