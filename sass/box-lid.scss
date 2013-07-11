@@ -1,18 +1,30 @@
 // TODO make mixins
-// TODO license
+// TODO compress
+/*!
+ * jQuery Box Lid Plugin v0.1
+ * https://github.com/jimjh/jquery-box-lid
+ *
+ * Copyright 2013 Jiunn Haur Lim
+ * Released under the MIT License
+ */
 @import "compass/css3";
 
-$box-lid-background: #000;
-$box-lid-menu-width: 200px;
-$box-lid-menu-color: #fff;
-$box-lid-bar-width:  40px;
-$box-lid-transition: cubic-bezier(0.75, 0, 0.175, 1);
+$box-lid-background: #000  !default; // background that appears when lid is open
+$box-lid-transition: cubic-bezier(0.75, 0, 0.175, 1) !default;
+
+// Menu Column
+$box-lid-menu-width: 200px !default;
+$box-lid-menu-color: #fff  !default;
+
+// Vertical Bar
+$box-lid-bar-width:  40px  !default;
+$box-lid-bar-background: rgba(0, 0, 0, 0.08) !default;
 
 .box-lid {
 
   @include perspective(2000);
   @include perspective-origin(50% 50%);
-  background-color: $box-lid-background;
+  background: $box-lid-background;
 
   .box-lid-content {
     @include transition(all 500ms $box-lid-transition);
@@ -40,7 +52,7 @@ $box-lid-transition: cubic-bezier(0.75, 0, 0.175, 1);
     width: $box-lid-bar-width;
     position: fixed;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.08);
+    background: $box-lid-bar-background;
     top: 0;
     left: 0;
     z-index: 2;

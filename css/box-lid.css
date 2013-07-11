@@ -1,4 +1,11 @@
-/* line 11, ../sass/box-lid.scss */
+/*
+ * jQuery Box Lid Plugin v0.1
+ * https://github.com/jimjh/jquery-box-lid
+ *
+ * Copyright 2013 Jiunn Haur Lim
+ * Released under the MIT License
+ */
+/* line 23, ../sass/box-lid.scss */
 .box-lid {
   -webkit-perspective: 2000;
   -moz-perspective: 2000;
@@ -10,16 +17,16 @@
   -ms-perspective-origin: 50% 50%;
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
-  background-color: black;
+  background: black;
 }
-/* line 17, ../sass/box-lid.scss */
+/* line 29, ../sass/box-lid.scss */
 .box-lid .box-lid-content {
   -webkit-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   -moz-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   -o-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
 }
-/* line 21, ../sass/box-lid.scss */
+/* line 33, ../sass/box-lid.scss */
 .box-lid .box-lid-icon {
   -webkit-transition: all 250ms cubic-bezier(0.75, 0, 0.175, 1);
   -moz-transition: all 250ms cubic-bezier(0.75, 0, 0.175, 1);
@@ -29,7 +36,7 @@
   top: 50%;
   left: 25%;
 }
-/* line 28, ../sass/box-lid.scss */
+/* line 40, ../sass/box-lid.scss */
 .box-lid .box-lid-icon:before {
   content: '';
   position: absolute;
@@ -38,17 +45,17 @@
   background: black;
   box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
 }
-/* line 39, ../sass/box-lid.scss */
+/* line 51, ../sass/box-lid.scss */
 .box-lid .box-lid-menu {
   width: 40px;
   position: fixed;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.08);
   top: 0;
   left: 0;
   z-index: 2;
 }
-/* line 47, ../sass/box-lid.scss */
+/* line 59, ../sass/box-lid.scss */
 .box-lid .box-lid-menu nav {
   -webkit-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
   -moz-transition: all 500ms cubic-bezier(0.75, 0, 0.175, 1);
@@ -62,11 +69,11 @@
   left: -240px;
   color: white;
 }
-/* line 56, ../sass/box-lid.scss */
+/* line 68, ../sass/box-lid.scss */
 .box-lid .box-lid-menu nav a {
   display: block;
 }
-/* line 61, ../sass/box-lid.scss */
+/* line 73, ../sass/box-lid.scss */
 .box-lid.box-lid-open .box-lid-content {
   -webkit-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
   -moz-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
@@ -74,12 +81,12 @@
   -o-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
   transform: rotateY(-30deg) translateZ(0px) translateX(200px);
 }
-/* line 64, ../sass/box-lid.scss */
+/* line 76, ../sass/box-lid.scss */
 .box-lid.box-lid-open .box-lid-icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 65, ../sass/box-lid.scss */
+/* line 77, ../sass/box-lid.scss */
 .box-lid.box-lid-open .box-lid-menu nav {
   left: 0;
 }
