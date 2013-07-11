@@ -16,7 +16,7 @@
   function BoxLid(opts) {
 
     opts = $.extend({
-      container: '.box-lid',
+      container: 'body',
       flag:      'box-lid-open'
     }, opts);
 

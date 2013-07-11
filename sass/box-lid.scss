@@ -19,6 +19,9 @@ $box-lid-menu-color: #fff  !default;
 $box-lid-bar-width:  40px  !default;
 $box-lid-bar-background: rgba(0, 0, 0, 0.08) !default;
 
+// Content
+$box-lid-content-background: #fff;
+
 .box-lid {
 
   @include perspective(2000);
@@ -27,53 +30,54 @@ $box-lid-bar-background: rgba(0, 0, 0, 0.08) !default;
 
   .box-lid-content {
     @include transition(all 500ms $box-lid-transition);
+    background: $box-lid-content-background;
   }
 
-  .box-lid-icon {
-    @include transition(all 250ms $box-lid-transition);
-    position: absolute;  // center the navicon
-    top: 50%;
-    left: 25%;
-  }
+}
 
-  .box-lid-icon:before { // create the navicon using shadows
-    content: '';
-    position: absolute;
-    width: 1.1em;
-    height: 0.15em;
-    background: black;
-    box-shadow:
-      0 0.25em 0 0 black,
-      0 0.5em 0 0 black;
-  }
+.box-lid-icon {
+  @include transition(all 250ms $box-lid-transition);
+  position: absolute;  // center the navicon
+  top: 50%;
+  left: 25%;
+}
 
-  .box-lid-menu {
-    width: $box-lid-bar-width;
-    background: $box-lid-bar-background;
-    position: fixed; // create bar that fills up the page
+.box-lid-icon:before { // create the navicon using shadows
+  content: '';
+  position: absolute;
+  width: 1.1em;
+  height: 0.15em;
+  background: black;
+  box-shadow:
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+.box-lid-menu {
+  width: $box-lid-bar-width;
+  background: $box-lid-bar-background;
+  position: fixed; // create bar that fills up the page
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  nav { // push nav to the left, beyond the viewport
+    @include transition(all 500ms $box-lid-transition);
+    display: block;
     height: 100%;
+    width: $box-lid-menu-width;
+    position: absolute;
     top: 0;
-    left: 0;
-    z-index: 2;
-    nav { // push nav to the left, beyond the viewport
-      @include transition(all 500ms $box-lid-transition);
-      display: block;
-      height: 100%;
-      width: $box-lid-menu-width;
-      position: absolute;
-      top: 0;
-      left: -1.2 * $box-lid-menu-width;
-      color: $box-lid-menu-color;
-      a { display: block; }
-    }
+    left: -1.2 * $box-lid-menu-width;
+    color: $box-lid-menu-color;
+    a { display: block; }
   }
+}
 
-  &.box-lid-open {
-    .box-lid-content { // skew the content
-      @include transform(rotateY(-30deg) translateZ(0px) translateX(200px));
-    }
-    .box-lid-icon { @include opacity(0); }
-    .box-lid-menu nav { left: 0; }
+.box-lid-open {
+  .box-lid-content { // skew the content
+    @include transform(rotateY(-30deg) translateZ(0px) translateX(200px));
   }
-
+  .box-lid-icon { @include opacity(0); }
+  .box-lid-menu nav { left: 0; }
 }

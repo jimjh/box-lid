@@ -1,3 +1,10 @@
+---
+layout: demo
+title: Box Lid Menu
+excerpt: Box Lid Menu inspired by Toybox.
+repo: jimjh/box-lid
+---
+
 This jQuery plugin creates the box lid effect for navigation menus, and is
 inspired by [Toybox](http://www.toybox.co.nz/). Here is [a simple demo][demo].
 
