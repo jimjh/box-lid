@@ -10,6 +10,7 @@ GEM
       multi_json (~> 1.0)
     fssm (0.2.10)
     multi_json (1.7.7)
+    rake (10.1.0)
     sass (3.2.9)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
@@ -20,4 +21,5 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 0.12)
+  rake (~> 10.1)
   uglifier (~> 2.1)
