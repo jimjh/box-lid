@@ -1,0 +1,19 @@
+{
+  "name": "box-lid",
+  "version": "0.1",
+  "title": "jQuery Box Lid",
+  "author": "Jim Lim",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/jimjh/box-lid/master/LICENSE"
+  }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.10"
+  },
+  "bugs": "https://github.com/jimjh/box-lid/issues",
+  "homepage": "https://github.com/jimjh/box-lid",
+  "docs": "http://jimjh.com/box-lid/",
+  "demo": "http://jimjh.com/box-lid/demo.html"
+}

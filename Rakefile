@@ -2,10 +2,10 @@ require 'uglifier'
 require 'compass'
 
 task :compile_js do
-  source = File.read(File.expand_path('js/box-lid.js', __dir__))
+  source = File.read(File.expand_path('js/.jquery.box-lid.js', __dir__))
   uglified, source_map = Uglifier.compile_with_map(source)
   { js: uglified, map: source_map }.each do |k, v|
-    File.write(File.expand_path("js/box-lid.min.#{k}", __dir__), v)
+    File.write(File.expand_path("js/jquery.box-lid.min.#{k}", __dir__), v)
   end
   puts 'done with javascripts'
 end
