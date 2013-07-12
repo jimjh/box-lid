@@ -2,6 +2,7 @@
   "name": "box-lid",
   "version": "0.1.0",
   "title": "jQuery Box Lid",
+  "description": "A simple jQuery plugin that creates the box lid effect for navigation menus. Inspired by Toybox.",
   "author": {
     "name": "Jim Lim",
     "url": "http://jimjh.com"
