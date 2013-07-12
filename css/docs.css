@@ -91,6 +91,7 @@ img {
 }
 
 header {
+  float: right;
   width:270px;
 }
 
@@ -157,6 +158,13 @@ section {
   padding-bottom:50px;
 }
 
+section * {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
 small {
   font-size:11px;
 }
@@ -185,3 +193,6 @@ hr {
   height: 100%;
   width: 100%;
 }
+
+.inactive { display: none; }
+.active { }

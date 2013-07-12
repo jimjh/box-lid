@@ -50,10 +50,60 @@
     <script> $('.box-lid-menu').boxLid(); </script>
 
     <script>
-      /* Quick Hack to generate menu. */
+
+      /* quick hack to generate menu. */
+
+      function Part(title) {
+
+        this.title = title;
+        this.contents = [];
+
+        this.push = function(ele) {
+          this.contents.push(ele);
+          ele.addClass('inactive');
+        };
+
+        this.toggle = function() {
+          this.title.toggleClass('active inactive');
+          $.each(this.contents, function() {
+            this.toggleClass('active inactive')
+          });
+        };
+
+        var text = title.text();
+        var that = this;
+        this.link = $('<a>').
+          attr('title', text).
+          text(text).
+          attr('href', '#').
+          click(function() {
+            $('.active').toggleClass('active inactive');
+            that.toggle();
+            return false;
+          });
+
+        title.addClass('inactive');
+
+      }
+
+      var parts = [];
+      var part  = null;
+
       $('section').children().each(function() {
-        $(this).hide();
+        var ele = $(this);
+        if (ele.is('h2')) {
+          if (part) parts.push(part);
+          part = new Part(ele);
+        } else if (part) {
+          part.push(ele);
+        }
       });
+
+      if (part) { parts.push(part); }
+
+      parts[0].toggle();
+      $.each(parts, function() { $('nav').append(this.link); });
+
     </script>
 
   </body>
