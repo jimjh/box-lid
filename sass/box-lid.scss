@@ -76,7 +76,7 @@ $box-lid-content-background: #fff;
 
 .box-lid-open {
   .box-lid-content { // skew the content
-    @include transform(rotateY(-30deg) translateZ(0px) translateX(200px));
+    @include transform(rotateY(-30deg) translateX(200px));
   }
   .box-lid-icon { @include opacity(0); }
   .box-lid-menu nav { left: 0; }

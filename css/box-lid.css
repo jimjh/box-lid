@@ -67,11 +67,11 @@
   color: white; }
 
 .box-lid-open .box-lid-content {
-  -webkit-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
-  -moz-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
-  -ms-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
-  -o-transform: rotateY(-30deg) translateZ(0px) translateX(200px);
-  transform: rotateY(-30deg) translateZ(0px) translateX(200px); }
+  -webkit-transform: rotateY(-30deg) translateX(200px);
+  -moz-transform: rotateY(-30deg) translateX(200px);
+  -ms-transform: rotateY(-30deg) translateX(200px);
+  -o-transform: rotateY(-30deg) translateX(200px);
+  transform: rotateY(-30deg) translateX(200px); }
 .box-lid-open .box-lid-icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0; }
