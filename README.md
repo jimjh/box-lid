@@ -34,6 +34,9 @@ $(function() {
 });
 ```
 
+You are highly encouraged to style your own navigation menu within the `nav`
+element. The demo and the docs currently use `sass/box-lid-nav.scss`.
+
 - TODO release plugin
 
 ## Configuration

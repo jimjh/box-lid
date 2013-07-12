@@ -8,7 +8,7 @@
 // TODO make mixins
 @import "compass/css3";
 
-$box-lid-background: #000  !default; // background that appears when lid is open
+$box-lid-background: #333  !default; // background that appears when lid is open
 $box-lid-transition: cubic-bezier(0.75, 0, 0.175, 1) !default;
 
 // Menu Column
@@ -54,6 +54,7 @@ $box-lid-content-background: #fff;
 }
 
 .box-lid-menu {
+  @include transition(all 250ms $box-lid-transition);
   width: $box-lid-bar-width;
   background: $box-lid-bar-background;
   position: fixed; // create bar that fills up the page
@@ -70,7 +71,6 @@ $box-lid-content-background: #fff;
     top: 0;
     left: -1.2 * $box-lid-menu-width;
     color: $box-lid-menu-color;
-    a { display: block; }
   }
 }
 
@@ -80,4 +80,5 @@ $box-lid-content-background: #fff;
   }
   .box-lid-icon { @include opacity(0); }
   .box-lid-menu nav { left: 0; }
+  .box-lid-menu { background: none; }
 }

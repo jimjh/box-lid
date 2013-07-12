@@ -9,6 +9,7 @@
     <link rel='stylesheet' type='text/css' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' href='css/docs.css'>
     <link rel='stylesheet' type='text/css' href='css/box-lid.css'>
+    <link rel='stylesheet' type='text/css' href='css/box-lid-nav.css'>
     <link rel='stylesheet' type='text/css' href='css/pygment_trac.css'>
   </head>
   <body>
@@ -16,6 +17,7 @@
       <div class='box-lid-icon'></div>
       <nav>
         <h4>Menu</h4>
+        <ul></ul>
       </nav>
     </div>
     <div class='box-lid'>
@@ -82,6 +84,8 @@
             return false;
           });
 
+          this.item = $('<li>').append(this.link);
+
         title.addClass('inactive');
 
       }
@@ -102,7 +106,7 @@
       if (part) { parts.push(part); }
 
       parts[0].toggle();
-      $.each(parts, function() { $('nav').append(this.link); });
+      $.each(parts, function() { $('nav ul').append(this.item); });
 
     </script>
 
