@@ -1,8 +1,11 @@
 {
   "name": "box-lid",
-  "version": "0.1",
+  "version": "0.1.0",
   "title": "jQuery Box Lid",
-  "author": "Jim Lim",
+  "author": {
+    "name": "Jim Lim",
+    "url": "http://jimjh.com"
+  },
   "licenses": [
     {
       "type": "MIT",
