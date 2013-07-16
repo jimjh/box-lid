@@ -4,18 +4,4 @@
  *
  * Copyright 2013 Jiunn Haur Lim
  * Released under the MIT License
- */
-.box-lid-menu nav {
-  margin-top: 3em;
-  padding-left: 1em; }
-.box-lid-menu nav a {
-  -webkit-transition: all 100ms ease-in;
-  -moz-transition: all 100ms ease-in;
-  -o-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-  text-decoration: none;
-  color: #fff;
-  display: block; }
-.box-lid-menu nav a:hover {
-  padding-left: .75em;
-  background: #000; }
+ */.box-lid-menu nav{margin-top:3em;padding-left:1em}.box-lid-menu nav a{-webkit-transition:all 100ms ease-in;-moz-transition:all 100ms ease-in;-o-transition:all 100ms ease-in;transition:all 100ms ease-in;text-decoration:none;color:#fff;display:block}.box-lid-menu nav a:hover{padding-left:.75em;background:#000}
