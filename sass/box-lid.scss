@@ -1,6 +1,6 @@
 /*!
  * jQuery Box Lid Plugin v0.1
- * https://github.com/jimjh/jquery-box-lid
+ * https://github.com/jimjh/box-lid
  *
  * Copyright 2013 Jiunn Haur Lim
  * Released under the MIT License
