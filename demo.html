@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="description" content='The simplest demo possible for the box lid navigation menu'>
+    <title>Box Lid Navigation</title>
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/box-lid.css'>
+    <link rel='stylesheet' type='text/css' href='css/box-lid-nav.css'>
+    <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script src='js/jquery.box-lid.js'></script>
+    <style>
+      p.links {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='box-lid-menu'>
+      <div class='box-lid-icon'></div>
+      <nav>
+        <h4>Projects</h4>
+        <ul>
+          <li><a href='http://jimjh.com/box-lid' title='documentation'>Documentation</a></li>
+          <li><a href='http://github.com/jimjh/box-lid' title='github'>GitHub</a></li>
+          <li><a href='http://jimjh.com' title='Jim Lim' rel='author'>Jim Lim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class='box-lid'>
+      <div class='box-lid-content'>
+        <img src='images/audi.jpg'>
+      </div>
+    </div>
+    <script>
+      $('.box-lid-menu').boxLid();
+    </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5604647-7']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
