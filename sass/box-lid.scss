@@ -24,7 +24,7 @@ $box-lid-content-background: #fff;
 
 .box-lid {
 
-  @include perspective(2000);
+  @include perspective(2000px);
   @include perspective-origin(50% 50%);
   background: $box-lid-background;
 
@@ -76,7 +76,7 @@ $box-lid-content-background: #fff;
 
 .box-lid-open {
   .box-lid-content { // skew the content
-    @include transform(rotateY(-30deg) translateX(200px));
+    @include transform(rotateY(-30deg) translateX($box-lid-menu-width));
   }
   .box-lid-icon { @include opacity(0); }
   .box-lid-menu nav { left: 0; }
