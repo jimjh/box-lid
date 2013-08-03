@@ -16,6 +16,7 @@ Finally, a simple introduction can be found on [my blog](http://blog.jimjh.com/j
 
 ### Featured By
 
+- [coliss.com](http://coliss.com/articles/build-websites/operation/javascript/jquery-plugin-box-lid-menu.html)
 - [jquery.in](http://jquer.in/jquery-navigation-and-menu-plugins-from-2012/box-lid/)
 - [HTML Drive](http://www.htmldrive.net/items/show/1329/JQuery-Box-Lid-Menu-in-action-by-hovering-your-mouse-over-the-menu-bar-on-the-left)
 - [jQuery Script.net](http://www.jqueryscript.net/menu/Easy-jQuery-3D-Side-Menu-Plugin-with-CSS3-Box-Lid.html)
