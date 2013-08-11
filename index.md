@@ -21,6 +21,8 @@ Finally, a simple introduction can be found on [my blog](http://blog.jimjh.com/j
 - [HTML Drive](http://www.htmldrive.net/items/show/1329/JQuery-Box-Lid-Menu-in-action-by-hovering-your-mouse-over-the-menu-bar-on-the-left)
 - [jQuery Script.net](http://www.jqueryscript.net/menu/Easy-jQuery-3D-Side-Menu-Plugin-with-CSS3-Box-Lid.html)
 - [nacodes](http://www.nacodes.com/2013/07/12/jQuery-plugin-for-Box-Lid-Menu)
+- [jqueryrain](http://www.jqueryrain.com/2013/08/box-lid-menu-jquery-navigation-menus-plugin/)
+- [phpspot](http://phpspot.org/blog/archives/2013/08/jqueryboxlid.html)
 
 ## Installation
 First, include the stylesheet and javascript as follows:
